@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    
+}
+
+.main__content {
+    padding: 2rem 6rem;
+}
+
+.main__logo {
+    margin-bottom: 4rem;
+}
+
+.main__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.main__label {
+    display: block;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.main__input {
+    width: 100%;
+    padding: 1rem;
+    background: #eee;
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+}
+
+.main__submit {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.main__footer {
+    color: #333;
+}
+
+.main__span {
+    color: #079992;
+    border-bottom: 1px #079992 solid;
+    cursor: pointer;
+}
+
+.main__user {
+    height: 100%;
+    background: #f8c291;
+    display: grid;
+    align-items: center;
+    padding: 0 10rem;
+    line-height: 1.5;
+}
+
+.main__titulo {
+    margin-bottom: 1rem;
+}
+
+.perfil {
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+}
+
+.perfil__content {
+    margin-right: 1rem;
+}
+
+.perfil__user {
+    width: 100%;
+}
+
+.perfil__text {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .main__user {
+        padding: 0 7rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main__user {
+        padding: 0 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main__user {
+        padding: 0 3rem;
+    }
+
+    .main__content {
+        padding: 2rem 4rem;
+    }
+
+    .main__title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .main__user {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .main__content {
+        padding: 2rem 2rem;
+    }
+
+    .main__logo {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main__title {
+        font-size: 1.3rem;
+    }
+}
